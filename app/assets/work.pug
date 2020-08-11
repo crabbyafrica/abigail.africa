@@ -1,0 +1,91 @@
+extends ../_includes/layout
+include mixins/mixins.pug
+block content
+    .brunch
+      .main
+        .menu
+          a(href='https://twitter.com/abigaillafrica', target="_blank")
+            img(class="twitter", src="pics/twitter.svg", alt="Twitter") 
+          a(href="/index.html")
+            img(class="work-icon", src="pics/wave.png", alt="Work")
+          a(href="https://www.notion.so/abbyafrica/Records-ac57a902f31347c7b899aa3b1f4c3474", target="_blank")
+            img(class="blog-icon", src="pics/writing.png", alt="Blog")
+          a(href="https://projectwren.com/profile/abigailafrica?utm_campaign=share", target="_blank")
+            img(class="eco-icon", src="pics/earth.png", alt="Climate Impact")
+
+        h1 Work
+
+        //- div.container
+        //-    h3.full All Work
+          //- h3 Jobs & Internships
+          //- h3 Education Work
+          //- ^ The above is for when I code the menupages
+
+        div.work-wrapper
+        +work("2020", "https://withprimer.com", "Primer →", "Developing curriculum strategies and lesson-building tools.", "Leading content writing and strategy.", "Managing approaches to work and team collaboration.")
+
+        +work("2020", "https://variety.com/2019/digital/news/jimmy-iovine-dr-dre-usc-hall-dedication-ribbon-cutting-1203356321/", "USC Iovine & Young Academy: XQ Impact Lab →", "Working as a design strategist for the founding of USC Iovine & Young Academy's associated high school.", "Designing the first year curricular and social experience.", "Crafting a basis for faculty hiring and cross-disciplinary teaching.")
+
+        div.work-wrapper
+          div
+            p.date 2019
+          
+          div.work
+            p.workplace
+              |
+              +link("https://notion.so", "Notion Labs, Inc →")
+              ul Researched and contributed to the launch of 
+                |
+                +link("https://www.notion.so/students","Notion's Free Education Plan")(class="bio-underline")
+                |. 
+              ul Wrote and designed 
+                |
+                +link("https://www.notion.so/Help-Support-e040febf70a94950b8620e6f00005004","user guides")(class="bio-underline") 
+                |  for Notion Help & Support Documentation.
+              ul Produced video for the Notion Free for Students Launch with 
+                |
+                a(href="https://etfilmhome.com/About-Contact", target="_blank", class="bio-underline") This Land Films
+                | .
+                //- The above block is *not* a mixin because of the link to Erin & Tim.
+
+        +work("2019", "https://xqsuperschool.org/xq-schools", "Client: XQ Super Schools →", "Designed pedagogy for South Central charter school, XQ Schools, & Apple Learning.", "Designed four-year curriculum & example coursework.", "Designed onboarding plan for faculty and staff.")
+
+        +work("2019", "https://www.hotwheelsmedia.com/about-hotwheels/history.html", "Client: Hot Wheels x Mattel →", "Designed solutions for capturing the 8+ market.", "Designed & built out concept for television series around Hot Wheels.", "Designed & led pitch materials.")
+
+        +work("2019", "https://xqsuperschool.org/xq-schools", "Generation She →", "Led the She Leads Entrepreneurship Makeathon in March 2019 at Snap, Inc.", "Wrote and published human-centered entrepreneurship curriculum.", "Conducted user research with high school students from the LA area.")
+
+        +work("2018", "https://pmsquare.com/", "PMsquare →", "Designed and launched new website.", "Wrote technical copy for marketing materials.", "Created new style guides and custom illustrations.")
+
+            //- start JS
+        script. 
+          tippy('.twitter', {
+            content: 'Twitter',
+            theme: 'light',
+            arrow: false,
+            distance: 0,
+            delay: 0,
+          })
+
+          tippy('.work-icon', {
+            content: 'About',
+            theme: 'light',
+            arrow: false,
+            distance: 0,
+            delay: 0,
+          });
+
+          tippy('.blog-icon', {
+            content: 'Writing',
+            theme: 'light',
+            arrow: false,
+            distance: 0,
+            delay: 0,
+          });
+
+          tippy('.eco-icon', {
+            content: 'Carbon Report',
+            theme: 'light',
+            arrow: false,
+            distance: 0,
+            delay: 0,
+          });

@@ -1,0 +1,46 @@
+mixin paragraph()
+  //- attributes == {class: ""}
+  p  What
+
+
+
+mixin articleHeader(head, hero)
+  body
+    hr
+    .article-header
+      h1=head
+      if block
+        block
+      else
+        p No content provided
+      img.img-landing(src=hero)
+
+mixin callout(title)
+
+  .callout
+    |
+    b=title
+    | 
+    if block
+      block
+    else
+        p No content provided
+
+mixin link(href, name)
+  a(href=href target="_blank")&attributes(attributes)= name
+
+mixin bloglink(href, name)
+  a(href=href target="_blank" class="metaEdu")&attributes(attributes)= name
+
+mixin work(date, href, workplace, A, B, C)
+ div.work-wrapper
+            div
+              p.date=date
+            div.work
+              p.workplace
+                |
+                a(href=href, target="_blank")&attributes(attributes)= workplace
+                |
+                ul=A
+                ul=B
+                ul=C

@@ -1,0 +1,97 @@
+extends ../_includes/layout
+include mixins/mixins.pug
+block content
+
+  .brunch   
+    .main
+      .menu
+          a(href='https://twitter.com/abigaillafrica', target="_blank")
+            img(class="twitter", src="pics/twitter.svg", alt="Twitter") 
+          a(href="/work.html")
+            img(class="work-icon", src="pics/work.png", alt="Work")
+          a(href="https://www.notion.so/abbyafrica/Records-ac57a902f31347c7b899aa3b1f4c3474", target="_blank")
+            img(class="blog-icon", src="pics/writing.png", alt="Blog")
+          a(href="https://projectwren.com/profile/abigailafrica?utm_campaign=share", target="_blank")
+            img(class="eco-icon", src="pics/earth.png", alt="Climate Impact")
+
+
+      h1.name Abigail Africa  
+
+        div.home-container
+        
+          p I’m a design strategist and education geek entering my final year at the 
+            |
+            +link("https://iovine-young.usc.edu/","USC Iovine and Young Academy")(class="bio-underline")
+            | , where I'm researching career opportunities for aging workers.
+          
+          p Currently, I'm building 
+            |
+            +link("https://www.withprimer.com/","futures of K-12 learning")(class="bio-underline")  
+            |  and building LA's 
+            +link("https://www.sparksc.org/","student entrepreneurship community")(class="bio-underline")  
+            | . Previously, I  built  
+            |
+            +link("https://www.notion.so/students","educational experiences at Notion Labs, Inc.")(class="bio-underline")
+            |, designed original pedagogy for
+            |
+            +link("https://xqsuperschool.org/xq-schools","XQ Schools")(class="bio-underline")
+            |, and wrote 
+            |
+            +link("https://generationshe.co","human-centered design curriculum for high school womxn")(class="bio-underline")
+            |. 
+
+
+          p Have a question? Email me at <span class="code">hello</span> + <span class="code">@</span> + this website. 
+
+          p(class="meta") 
+            br
+            +link("https://iovine-young.usc.edu/thepulse/Winners-of-Futurethon-2018_147.html","B.S. Integrated Design, Technology, & Business →")
+            br
+            +link("https://www.globalci.org/fellows/","IDEO x GCYS @ Cambridge, MA →")
+            br
+            +link("https://www.exeter.edu/","Phillips Exeter Academy →")
+
+          img.hero-img-container(src="pics/self-portrait.png" alt="Self Portrait")
+
+            //- Start JS
+        script. 
+
+          tippy('.twitter', {
+            content: 'Twitter',
+            theme: 'dark',
+            arrow: true,
+            distance: 0,
+            delay: 0,
+          })
+
+          tippy('.work-icon', {
+            content: 'Work',
+            theme: 'dark',
+            arrow: true,
+            distance: 0,
+            delay: 0,
+          });
+
+          tippy('.blog-icon', {
+            content: 'Writing',
+            theme: 'dark',
+            arrow: true,
+            distance: 0,
+            delay: 0,
+          });
+
+          tippy('.eco-icon', {
+            content: 'Carbon Report',
+            theme: 'dark',
+            arrow: true,
+            distance: 0,
+            delay: 0,
+          });
+
+          //- tippy('.hero-img-container', {
+          //-   content: 'Self-portrait',
+          //-   theme: 'dark',
+          //-   arrow: true,
+          //-   distance: 0,
+          //-   delay: 0,
+          //- });

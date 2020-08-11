@@ -1,0 +1,51 @@
+extends ../_includes/layout
+include mixins/mixins.pug
+block content
+
+
+  .brunch   
+    .main
+      .menu
+          a(href='https://twitter.com/abigaillafrica', target="_blank")
+            img(class="twitter", src="pics/twitter.svg", alt="Twitter") 
+          a(href="/index.html")
+            img(class="work-icon", src="pics/wave.png", alt="Work")
+          a(href="/work.html")
+            img(class="work-icon", src="pics/work.png", alt="Work")
+          a(href="https://www.notion.so/abbyafrica/Records-ac57a902f31347c7b899aa3b1f4c3474", target="_blank")
+            img(class="work-icon", src="pics/writing.png", alt="Blog")
+          a(href="https://projectwren.com/profile/abigailafrica?utm_campaign=share", target="_blank")
+            img(class="work-icon", src="pics/earth.png", alt="Climate Impact")
+
+
+      h1.name Education  
+
+        div.home-container
+
+          +work("College", "https://iovine-young.usc.edu", "USC Iovine & Young Academy →", "B.S. in the Arts, Technology, and Business of Innovation", "Minor in Entrepreneurship")
+
+          p.metaEdu 
+            | 
+            +link("https://www.notion.so/Upcoming-Explaining-the-Iovine-Young-Academy-269ed649650a402681c60a4d1af9f427","📌 Read about my experience at USC Iovine & Young Academy →")
+
+          p At the Iovine & Young Academy, I engage in practical ventures in startup entrepreneurship to physical and digital product design; visual, graphic, and 3D design; web development, programming, and app development; videography and audio design; and industry partnerships with established companies and new startups.
+          
+          p For my senior year Garage Experience project, my co-founders, 
+            |
+            +link("https://www.timguiteras.com/","Tim Guiteras")(class="bio-underline")  
+            |  and  
+            +link("https://www.linkedin.com/in/ellyberge/","Elly Berge")(class="bio-underline")  
+            | , and I are building entrepreneurial opportunities for the aging American workforce. 
+        
+
+
+
+        //-   p(class="metaEdu") 
+        //-     br
+        //-     +link("https://iovine-young.usc.edu/thepulse/Winners-of-Futurethon-2018_147.html","B.S. Integrated Design, Technology, & Business →")
+        //-     br
+        //-     +link("https://www.globalci.org/fellows/","IDEO x GCYS @ Cambridge, MA →")
+        //-     br
+        //-     +link("https://www.exeter.edu/","Phillips Exeter Academy →")
+
+      //- img(class='img-corner', src='/pics/header.png')
