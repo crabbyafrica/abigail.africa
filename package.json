@@ -7,9 +7,9 @@
   "repository": "",
   "scripts": {
     "start": "brunch watch --server",
-    "build": "",
-    "now-dev": "",
-    "now-build": ""
+    "build": "brunch build --production",
+    "now-dev": "brunch watch --server",
+    "now-build": "brunch build"
   },
   "dependencies": {
     "chart.js": "^2.9.3",
