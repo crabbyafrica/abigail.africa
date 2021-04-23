@@ -14,8 +14,6 @@ public/index.html: node_modules
 server:
 	brunch watch --server
 
-www:
-	now alias benstanfield.io www.benstanfield.io
 # if you just want to remove unnecessary local files: make {clean|nuke}
 clean:
 	rm -rf public
@@ -25,15 +23,13 @@ nuke: clean
 
 deploy: 
 	brunch build
-	now --prod
-
-alias:
-	now alias ${CLIPBOARD} abigail.africa
-	now alias abigail.africa  www.abigail.africa
-foo:
-		@echo ${CLIPBOARD}
+	vercel
 
 # when ready to push up for production:make production
 production:
 	brunch build
-	now -p public
+	vercel --prod
+
+# make deploy to check it 
+# make production to deploy 
+# make nuke 

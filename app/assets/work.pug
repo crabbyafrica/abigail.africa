@@ -10,7 +10,7 @@ block content
             img(class="work-icon", src="pics/wave.png", alt="Work")
           a(href="https://www.notion.so/abbyafrica/Records-ac57a902f31347c7b899aa3b1f4c3474", target="_blank")
             img(class="blog-icon", src="pics/writing.png", alt="Blog")
-          a(href="https://projectwren.com/profile/abigailafrica?utm_campaign=share", target="_blank")
+          a(href="https://www.wren.co/profile/beez", target="_blank")
             img(class="eco-icon", src="pics/earth.png", alt="Climate Impact")
 
         h1 Work
@@ -22,6 +22,8 @@ block content
           //- ^ The above is for when I code the menupages
 
         div.work-wrapper
+        +work("2020", "http://figma.com/", "Figma →", "Student Fellow developing editorial features for the greater student community.", "Producing 'Back to School?' series with Figma Edu.")
+
         +work("2020", "https://withprimer.com", "Primer →", "Developing curriculum strategies and lesson-building tools.", "Leading content writing and strategy.", "Managing approaches to work and team collaboration.")
 
         +work("2020", "https://variety.com/2019/digital/news/jimmy-iovine-dr-dre-usc-hall-dedication-ribbon-cutting-1203356321/", "USC Iovine & Young Academy: XQ Impact Lab →", "Working as a design strategist for the founding of USC Iovine & Young Academy's associated high school.", "Designing the first year curricular and social experience.", "Crafting a basis for faculty hiring and cross-disciplinary teaching.")
@@ -55,37 +57,36 @@ block content
         +work("2019", "https://xqsuperschool.org/xq-schools", "Generation She →", "Led the She Leads Entrepreneurship Makeathon in March 2019 at Snap, Inc.", "Wrote and published human-centered entrepreneurship curriculum.", "Conducted user research with high school students from the LA area.")
 
         +work("2018", "https://pmsquare.com/", "PMsquare →", "Designed and launched new website.", "Wrote technical copy for marketing materials.", "Created new style guides and custom illustrations.")
-
             //- start JS
         script. 
           tippy('.twitter', {
             content: 'Twitter',
-            theme: 'light',
-            arrow: false,
+            theme: 'dark',
+            arrow: true,
             distance: 0,
             delay: 0,
           })
 
           tippy('.work-icon', {
             content: 'About',
-            theme: 'light',
-            arrow: false,
+            theme: 'dark',
+            arrow: true,
             distance: 0,
             delay: 0,
           });
 
           tippy('.blog-icon', {
             content: 'Writing',
-            theme: 'light',
-            arrow: false,
+            theme: 'dark',
+            arrow: true,
             distance: 0,
             delay: 0,
           });
 
           tippy('.eco-icon', {
             content: 'Carbon Report',
-            theme: 'light',
-            arrow: false,
+            theme: 'dark',
+            arrow: true,
             distance: 0,
             delay: 0,
           });

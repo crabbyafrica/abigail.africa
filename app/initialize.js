@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
   // do your setup here
   var $ = require('jquery');
-  console.log('Tasty Brunch!');
+  console.log();
 });

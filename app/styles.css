@@ -47,6 +47,7 @@ body {
   margin: auto;
   padding-top: 100px;
   padding-bottom: 100px;
+  line-height: 35px;
 }
 button {
   color: #505050;
@@ -122,6 +123,7 @@ ul a:hover {
 }
 .bio-underline {
   border-bottom: 1px dashed #bbb;
+  line-height: 35px;
 }
 .meta a, .meta a:visited {
   color: #bbb;
@@ -140,8 +142,7 @@ h1 {
   font-size: 72pt;
   font-family: 'garamond';
   font-weight: 400;
-  margin-bottom: 0px;
-  margin-top: 30px;
+  margin-top: 50px;
   color: #333;
 }
 h3 {
@@ -178,6 +179,7 @@ h3 {
 .home-container {
   width: 700px;
   font-family: 'graphik';
+  margin-top: 50px;
 }
 .container {
   font-family: 'graphik';
