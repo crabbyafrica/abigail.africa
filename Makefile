@@ -30,6 +30,10 @@ production:
 	brunch build
 	vercel --prod
 
+github:
+	git add .
+	git commit -m "new commit"
+
 # make deploy to check it 
 # make production to deploy 
 # make nuke 
