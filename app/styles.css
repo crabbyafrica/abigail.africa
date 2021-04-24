@@ -107,9 +107,9 @@ a:hover {
   color: #bbb;
 }
 .work {
-  font-family: 'garamond';
+  /* font-family: 'garamond'; */
   letter-spacing: 0px;
-  font-size: 14pt;
+  font-size: 11pt;
 }
 hr {
   border-top: 1px dashed #3c392f;
@@ -298,5 +298,9 @@ ul {
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+ }
+
+ .work-wrapper ul {
+   font-size: 11pt;
  }
 }
