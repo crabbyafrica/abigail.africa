@@ -8,7 +8,7 @@ block content
             img(class="twitter", src="pics/twitter.svg", alt="Twitter") 
           a(href="/index.html")
             img(class="work-icon", src="pics/wave.png", alt="Work")
-          a(href="https://www.notion.so/abbyafrica/Records-ac57a902f31347c7b899aa3b1f4c3474", target="_blank")
+          a(href="https://beez.substack.com/p/why-you-havent-heard-from-me", target="_blank")
             img(class="blog-icon", src="pics/writing.png", alt="Blog")
           a(href="https://www.wren.co/profile/beez", target="_blank")
             img(class="eco-icon", src="pics/earth.png", alt="Climate Impact")
@@ -22,9 +22,44 @@ block content
           //- ^ The above is for when I code the menupages
 
         div.work-wrapper
-        +work("2020", "http://figma.com/", "Figma →", "Student Fellow developing editorial features for the greater student community.", "Producing 'Back to School?' series with Figma Edu.")
-
-        +work("2020", "https://withprimer.com", "Primer →", "Developing curriculum strategies and lesson-building tools.", "Leading content writing and strategy.", "Managing approaches to work and team collaboration.")
+          div
+            p.date 2021
+          
+          div.work
+            p.workplace
+              |
+              +link("https://figma.com", "Primer →")
+              ul Led 
+                |
+                +link("https://www.withprimer.com/blog/introducing-primer-grants","Primer Grants")(class="bio-underline") 
+                | , a program for 9-14 year olds on Primer.
+              ul Produced 
+                |
+                +link("https://withprimer.com/category/editorial","editorial blog content")(class="bio-underline")
+                |  for several months.
+              ul Led product testing with a select group of highly-active kid users.
+              ul Currently producing a podcast with kid hosts, shipping in summer 2021. 
+                //- The above block is *not* a mixin because of the links
+                  div.work-wrapper
+        
+        div.work-wrapper 
+          div
+            p.date 2020
+          
+          div.work
+            p.workplace
+              |
+              +link("https://figma.com", "Figma →")
+              ul Developed Student Fellowship program to grow Figma's educational community. 
+              ul Developed 
+                |
+                +link("https://www.figma.com/blog/on-pitching-and-presenting/","editorial features")(class="bio-underline") 
+                |  for the greater student community.
+              ul Produced 
+                |
+                +link("https://www.youtube.com/watch?v=_s1xyZM-2Gw&list=PLXDU_eVOJTx7aEo_UucA4v8VSyv7OKViG","'Back to School?'")(class="bio-underline")
+                |  series featuring Dylan Field, Marc Andreesen, & Karlie Kloss.
+                //- The above block is *not* a mixin because of the links
 
         +work("2020", "https://variety.com/2019/digital/news/jimmy-iovine-dr-dre-usc-hall-dedication-ribbon-cutting-1203356321/", "USC Iovine & Young Academy: XQ Impact Lab →", "Working as a design strategist for the founding of USC Iovine & Young Academy's associated high school.", "Designing the first year curricular and social experience.", "Crafting a basis for faculty hiring and cross-disciplinary teaching.")
 
@@ -35,18 +70,18 @@ block content
           div.work
             p.workplace
               |
-              +link("https://notion.so", "Notion Labs, Inc →")
-              ul Researched and contributed to the launch of 
+              +link("https://notion.so", "Notion →")
+              ul Researched, developed, and launched 
                 |
                 +link("https://www.notion.so/students","Notion's Free Education Plan")(class="bio-underline")
-                |. 
-              ul Wrote and designed 
-                |
-                +link("https://www.notion.so/Help-Support-e040febf70a94950b8620e6f00005004","user guides")(class="bio-underline") 
-                |  for Notion Help & Support Documentation.
+                |  alongside Camille Ricketts. 
               ul Produced video for the Notion Free for Students Launch with 
                 |
                 a(href="https://etfilmhome.com/About-Contact", target="_blank", class="bio-underline") This Land Films
+                | .
+              ul Wrote and designed 
+                |
+                +link("https://www.notion.so/Help-Support-e040febf70a94950b8620e6f00005004","Notion Help & Support documentation")(class="bio-underline") 
                 | .
                 //- The above block is *not* a mixin because of the link to Erin & Tim.
 
