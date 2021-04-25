@@ -150,6 +150,11 @@ h1 {
   margin-top: 50px;
   color: #333;
 }
+h2{
+  font-family: 'garamond';
+  font-size: 36pt;
+  font-weight: 400;
+}
 h3 {
   font-family: 'graphik bold';
   width: max-content;
@@ -219,13 +224,22 @@ ul {
 .menu {
   display: flex;
 }
-.twitter {
-  width: 40px;
+/* .twitter {
+  height: 60px;
+  margin-left: -20px;
+  margin-top: 10px;
   margin-bottom: 0px;
+} */
+.work-icon {
+  height: 60px;
+  margin-left: 0px;
+  margin-right: 10px;
+  padding-top: 10px;
 }
-.work-icon, .blog-icon, .eco-icon {
-  width: 20px;
-  margin-left: 15px;
+
+.blog-icon, .eco-icon {
+  height: 60px;
+  margin-left: 5px;
   margin-right: 10px;
   padding-top: 10px;
 }
@@ -234,7 +248,7 @@ ul {
   font-size: 15pt;
   width: 90%;
 }
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
   .hero-img-container {
     visibility: visible;
     width: 60%;
@@ -244,7 +258,7 @@ ul {
     margin-bottom: 100px;
     top: -50px;
  }
-}
+} */
 @media only screen and (max-width: 800px) {
   h1 {
     font-size: 54pt;
@@ -254,11 +268,15 @@ ul {
     margin-top: 30px;
     line-height: 54pt;
  }
-  p, ul {
+ .home-container{
+   margin-top: 25px;
+   max-width: 500px;
+ }
+  p, ul, a, .bio-underline {
     font-size: 11pt;
  }
   .work-wrapper ul {
-    font-size: 13pt;
+    font-size: 11pt;
  }
   .code {
     font-size: 11pt;
@@ -276,19 +294,37 @@ ul {
  }
 }
 @media only screen and (max-width: 500px) {
+
+  /* .hero-img-container {
+    visibility: visible;
+    width: 60%;
+    opacity: 50%;
+    float: right;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    top: -50px;
+ } */
+  .home-container{
+    margin-top: 0px;
+  }
   .twitter {
-    width: 60px;
+    height: 50px;
  }
   .work-icon, .blog-icon, .eco-icon {
-    width: 30px;
+    height: 40px;
     padding-top: 14px;
+ }
+
+  p, ul, a, .bio-underline{
+   line-height: 18pt;
+   font-size: 10.5pt;
  }
   h1 {
     font-size: 42pt;
     font-family: 'garamond-title';
     font-weight: 400;
     margin-bottom: 0px;
-    margin-top: 30px;
+    margin-top: 10px;
  }
   .home-container {
     width: 450px;
@@ -299,8 +335,10 @@ ul {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
  }
-
  .work-wrapper ul {
-   font-size: 11pt;
+   font-size: 10.5pt;
+ }
+ .date{
+   margin-top: 7px;
  }
 }
