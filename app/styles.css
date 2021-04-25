@@ -67,7 +67,7 @@ button {
   font-weight: 700;
 }
 p, li {
-  line-height: 35px;
+  line-height: 28px;
   font-size: 16px;
   margin-right: 100px;
   margin-bottom: 25px;
@@ -128,7 +128,7 @@ ul a:hover {
 }
 .bio-underline {
   border-bottom: 1px dashed #bbb;
-  line-height: 35px;
+  line-height: 28px;
 }
 .meta a, .meta a:visited {
   color: #bbb;
@@ -167,6 +167,11 @@ h3 {
   -moz-osx-font-smoothing: grayscale;
   margin-right: 25px;
   opacity: 40%;
+}
+h4{
+  font-size: 18pt;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 .full {
   opacity: 100%;
