@@ -241,7 +241,11 @@ ul {
   margin-right: 10px;
   padding-top: 10px;
 }
-
+.profile{
+  width: 200px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
 .blog-icon, .eco-icon {
   height: 60px;
   margin-left: 5px;
@@ -333,6 +337,9 @@ ul {
  }
   .home-container {
     width: 450px;
+ }
+ .profile{
+   width: 150px;
  }
   .name {
     font-size: 42pt;
